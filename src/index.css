@@ -1,0 +1,183 @@
+* {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: rgb(243, 104, 24);
+  background-color: #163121;
+  display: flex;
+  position: fixed;
+  padding: 2%;
+  text-align: center;
+}
+
+.header img {
+  max-width: 5%;
+  border-radius: 10cqmax;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+
+* img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #3154c9;
+  color: aliceblue;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.Navbar {
+  padding: 20px;
+  display: flex;
+  margin: auto;
+  background-color: rgb(214, 126, 12);
+  font-weight: bolder;
+  border-radius: 20px;
+  color: aliceblue;
+}
+
+.Home {
+  text-align: center;
+  margin: 10px;
+  display: flexbox;
+  width: auto;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+  font-weight: 400;
+}
+
+body {
+  background-image: url(C:\Users\odomp\Documents\highprince-blog\public\background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* src/Login.css */
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Login-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Login-button {
+  padding: 8px 16px;
+  background-color: #bb1c11;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Login-button:hover {
+  background-color: #d32f2f;
+}
+
+.submit-button {
+  padding: 8px 16px;
+  background-color: #05ac29;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #4acf3e;
+}
+
+/* RegistrationForm.css */
+
+/* Container styles */
+.RegistrationForm {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Form styles */
+.RegistrationForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #6d49cf;
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.RegistrationForm label {
+  font-weight: bold;
+  max-height: 600px;
+}
+
+.RegistrationForm input[type="text"],
+.RegistrationForm input[type="email"],
+.RegistrationForm input[type="date"],
+.RegistrationForm textarea {
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding-bottom: 5;
+}
+
+.RegistrationForm button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+.RegistrationForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Style error messages */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
