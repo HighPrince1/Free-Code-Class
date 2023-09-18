@@ -185,22 +185,43 @@ input[type="password"] {
   margin-top: 4px;
 }
 
-.WelcomeContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh; /* Adjust the height to your preference */
-  overflow: hidden;
-}
-
 .Welcome {
   background-color: #3498db;
   color: #fff;
+  display: flex;
   border-radius: 50px;
   padding: 10px;
-  width: 200px;
+  width: 600px;
   overflow: hidden;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Adjust the height to your preference */
+  overflow: hidden;
+  margin-top: 20px;
   font-size: 10px; /* Adjust the font size as needed */
-  transition: transform 3s ease;
+}
+
+/* Style the sliding images container */
+.SlidingImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add margin to separate from the text */
+  height: 100vh; /* Center vertically by setting container height to viewport height */
+}
+
+/* Style the individual image containers */
+.ImageContainer {
+  border-radius: 50px; /* Rounded corners */
+  padding: 10px; /* Padding around the container */
+  width: 200px; /* Width of the container */
+  background-color: #f0f0f0; /* Background color (optional) */
+}
+
+/* Style the sliding images */
+.SlidingImage {
+  max-width: 100%;
+  height: auto;
 }
