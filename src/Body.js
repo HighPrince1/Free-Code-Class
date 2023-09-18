@@ -1,13 +1,14 @@
 import React from "react";
-import "./index.css";
+import Welcome from "./Welcome";
 
-const Home = () => {
+function Body() {
   return (
-    <div className="Home">
+    <div className="Body">
       <h1>WELCOME TO FREE CODE CLASS</h1>
       <p>your one stop tech solution</p>
+      <Welcome />
     </div>
   );
-};
+}
 
-export default Home;
+export default Body;
