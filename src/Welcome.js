@@ -13,15 +13,6 @@ function Welcome() {
           countless advancements in every sector of human endeavor.
         </p>
       </div>
-
-      <div className="SlidingImages">
-        <div className="ImageContainer">
-          <img src="/Icon1.jpeg" alt="icon" className="SlidingImage" />
-        </div>
-        <div className="ImageContainer">
-          <img src="/Icon2.jpeg" alt="icon" className="SlidingImage" />
-        </div>
-      </div>
     </>
   );
 }
