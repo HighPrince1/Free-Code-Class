@@ -1,20 +1,24 @@
 import React from "react";
-import Body from "./Body";
+import Landing from "./Landing";
 import Footer from "./Footer";
-import Sidebar from "./Sidebar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import RegistrationForm from "./RegistrationForm";
 
 function App() {
   return (
     <Router>
+      <div className="App" style={{ backgroundColor: "#d6440a" }}>
+        {" "}
+      </div>
       <div className="App">
+        <Navbar />
         <Switch>
-          <Route exact path="/" />
+          <Route exact path="/RegistrationForm" component={RegistrationForm} />
+          <Route path="/" component={Landing} />
         </Switch>
-        <Body />
-        <Sidebar />
         <Footer />
       </div>
     </Router>

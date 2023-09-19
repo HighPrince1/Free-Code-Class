@@ -2,16 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Welcome from "./Welcome";
 
-function Body() {
+function Landing() {
   return (
-    <div className="Body-text">
+    <div className="Landing-text">
       <h1>WELCOME TO FREE CODE CLASS</h1>
-      <p className="p1">your one stop tech solution</p>
+      <p className="p1">your one stop tech solution...</p>
       <Welcome />
       <p>Don't have an account yet?</p>
-      <Link to="/RegistrationForm">Sign up</Link>
+      <Link to="/RegistrationForm">SignUp</Link>
     </div>
   );
 }
 
-export default Body;
+export default Landing;

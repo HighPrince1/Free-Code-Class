@@ -1,5 +1,5 @@
 {
-  "shema": "./shemas.json",
+  "schema": "./schema.json",
   "name": "free-code-class",
   "version": "0.1.0",
   "private": true,

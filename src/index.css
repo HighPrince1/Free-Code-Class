@@ -3,6 +3,21 @@
     monospace;
 }
 
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  /* Add responsive styles for small screens here */
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Add responsive styles for medium screens here */
+}
+
+/* Large screens (desktops) */
+@media (min-width: 993px) {
+  /* Add responsive styles for large screens here */
+}
+
 header {
   color: rgb(243, 104, 24);
   background-color: #163121;
@@ -26,7 +41,7 @@ header {
 footer {
   background-color: #1c6cd3;
   color: aliceblue;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
   margin-top: auto;
   bottom: 0;
@@ -34,7 +49,7 @@ footer {
   width: 100%;
 }
 
-.Body-text {
+.Landing-text {
   text-align: center;
   display: flexbox;
   width: auto;
@@ -62,7 +77,7 @@ h1 {
   }
 }
 
-.Body-text {
+.Landing-text {
   background-image: url("../src/images/background.jpg");
   background-size: cover;
   background-position: center;
@@ -135,7 +150,7 @@ input[type="password"] {
   max-width: 300px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #7bce1c;
   border-radius: 5px;
   background-color: #e01111;
 }
@@ -147,14 +162,14 @@ input[type="password"] {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #c09f0c;
-  max-height: 200px; /* Adjust the height as needed */
+  background-color: #2374c0;
+  max-height: 500px; /* Adjust the height as needed */
   overflow-y: auto;
 }
 
 .RegistrationForm label {
   font-weight: bold;
-  max-height: 100px;
+  max-height: 60px;
 }
 
 .RegistrationForm input[type="text"],
@@ -169,7 +184,7 @@ input[type="password"] {
 }
 
 .RegistrationForm button {
-  background-color: #007bff;
+  background-color: #08e225;
   color: hsl(0, 25%, 92%);
   border: none;
   padding: 10px 15px;
@@ -180,7 +195,7 @@ input[type="password"] {
 
 /* Button hover effect */
 .RegistrationForm button:hover {
-  background-color: #0056b3;
+  background-color: #62eb56;
 }
 
 /* Optional: Style error messages */
