@@ -57,11 +57,13 @@ const RegistrationForm = () => {
 
     // Add your form submission logic here
     console.log("Form data submitted:", formData);
+
+    history.push("Login");
   };
 
   const handleCancel = () => {
     // Add a route to the home page (adjust the route path as needed)
-    history.push("/");
+    history.push("/Landing");
   };
 
   return (
@@ -217,8 +219,12 @@ const RegistrationForm = () => {
           />
         </div>
 
-        <button type="submit">Register</button>
+        <button type="submit" onClick={handleSubmit}>
+          {" "}
+          Submit{" "}
+        </button>
         <button type="button" onClick={handleCancel}>
+          {" "}
           Cancel
         </button>
       </form>

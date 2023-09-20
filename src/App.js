@@ -1,23 +1,30 @@
 import React from "react";
-import Landing from "./Landing";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Landing from "./Landing";
+import Footer from "./Footer";
 import RegistrationForm from "./RegistrationForm";
+import Home from "./Home";
+import Login from "./Login";
 
 function App() {
   return (
     <Router>
-      <div className="App" style={{ backgroundColor: "#d6440a" }}>
-        {" "}
-      </div>
       <div className="App">
-        <Navbar />
         <Switch>
-          <Route exact path="/RegistrationForm" component={RegistrationForm} />
-          <Route path="/" component={Landing} />
+          <Route exact path="/Landing">
+            <Landing />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/RegistrationForm">
+            <RegistrationForm />
+          </Route>
+          <Route exact path="/Login">
+            <Login />
+          </Route>
         </Switch>
         <Footer />
       </div>
