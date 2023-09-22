@@ -1,20 +1,25 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
+import "./Login.css";
+
 function Login() {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isPending, setIsPending] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Here, you can handle the login logic with the email and password.
-    // For this example, we'll simply log them.
-    console.log("Email:", email);
-    console.log("Password:", password);
+    setIsPending(true);
 
-    // Redirect to the Home component
-    history.push("/");
+    // Simulate a login process (replace with actual login logic)
+    setTimeout(() => {
+      console.log("Email:", email);
+      console.log("Password:", password);
+      history.push("/Home");
+      setIsPending(false);
+    }, 2000);
   };
 
   return (
@@ -40,8 +45,14 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button className="submit-button" type="submit" onClick={handleLogin}>
-            Login
+          <button className="submit-button" type="submit" disabled={isPending}>
+            {isPending ? (
+              <>
+                <span className="spinner"></span> Please wait...
+              </>
+            ) : (
+              "Login"
+            )}
           </button>
         </form>
       </div>

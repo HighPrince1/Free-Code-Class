@@ -1,15 +1,24 @@
 import React from "react";
 
 function Navbar() {
+  const handleNavigation = (path) => {
+    // You can handle the navigation logic here.
+    // For example, use the React Router history to navigate.
+    // history.push(path);
+  };
+
   return (
     <div>
-      <nav class="navbar bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Navbar
-          </a>
+      <nav className="navbar bg-primary" data-bs-theme="dark">
+        <div className="container-fluid">
           <button
-            class="navbar-toggler"
+            className="navbar-brand btn"
+            onClick={() => handleNavigation("/")}
+          >
+            Navbar
+          </button>
+          <button
+            className="navbar-toggler btn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -17,50 +26,68 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <button
+                  className="nav-link active btn"
+                  aria-current="page"
+                  onClick={() => handleNavigation("/")}
+                >
                   Home
-                </a>
+                </button>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <button
+                  className="nav-link btn"
+                  onClick={() => handleNavigation("/features")}
+                >
                   Features
-                </a>
+                </button>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <button
+                  className="nav-link btn"
+                  onClick={() => handleNavigation("/pricing")}
+                >
                   Pricing
-                </a>
+                </button>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
+              <li className="nav-item dropdown">
+                <button
+                  className="nav-link dropdown-toggle btn"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  onClick={() => handleNavigation("/")}
                 >
                   Dropdown link
-                </a>
-                <ul class="dropdown-menu">
+                </button>
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <button
+                      className="dropdown-item btn"
+                      onClick={() => handleNavigation("/")}
+                    >
                       Action
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <button
+                      className="dropdown-item btn"
+                      onClick={() => handleNavigation("/")}
+                    >
                       Another action
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <button
+                      className="dropdown-item btn"
+                      onClick={() => handleNavigation("/")}
+                    >
                       Something else here
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </li>
