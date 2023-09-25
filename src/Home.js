@@ -1,6 +1,7 @@
 /* Home.js */
 import React from "react";
 import Navbar from "./Navbar";
+import "./Home.css";
 
 const Home = () => {
   // YouTube video URLs for each course

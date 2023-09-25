@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import Landing from "./Landing";
-import Footer from "./Footer";
 import RegistrationForm from "./RegistrationForm";
 import Home from "./Home";
 import Login from "./Login";
@@ -26,7 +25,6 @@ function App() {
             <Login />
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );

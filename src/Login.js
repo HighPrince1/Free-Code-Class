@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 import "./Login.css";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function Login() {
   const history = useHistory();
@@ -55,6 +56,7 @@ function Login() {
             )}
           </button>
         </form>
+        <Link to="./">Forgot Password?</Link>
       </div>
     </div>
   );
